@@ -75,6 +75,8 @@ cc -Wall -Wextra -Werror main.c libftprintf.a
 ## Resources
 
 - Linux manual pages: `man 3 printf`, `man 2 write`, `man 3 stdarg`.
+- https://man.archlinux.org/man/va_start.3.en
+- Geeks for Geeks
 
 ### Use of AI
 

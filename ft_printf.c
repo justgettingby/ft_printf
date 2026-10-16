@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
-static int	ft_literal(char *str, int *i)
+static int	ft_literal(const char *str, int *i)
 {
 	int	len;
 	int	j;
@@ -25,7 +25,7 @@ static int	ft_literal(char *str, int *i)
 	return (j);
 }
 
-static int	ft_step(char *str, int *i, va_list *ap)
+static int	ft_step(const char *str, int *i, va_list *ap)
 {
 	if (str[*i] != '%')
 		return (ft_literal(str, i));
@@ -35,7 +35,7 @@ static int	ft_step(char *str, int *i, va_list *ap)
 	return (ft_format(str[*i], ap));
 }
 
-int	ft_printf(char *str, ...)
+int	ft_printf(const char *str, ...)
 {
 	int		i;
 	int		j;

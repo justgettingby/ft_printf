@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFTPRINTF_H
-# define LIBFTPRINTF_H
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
 # include <stdarg.h>
 # include <stddef.h>
@@ -24,6 +24,6 @@ int	ft_putptr(void *ptr);
 int	ft_putstr(char *s);
 int	ft_format(char spec, va_list *ap);
 int	ft_putchar(char c);
-int	ft_printf(char *str, ...);
+int	ft_printf(const char *str, ...);
 
 #endif

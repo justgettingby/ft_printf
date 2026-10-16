@@ -6,7 +6,7 @@
 #    By: ralkhrai <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/16 21:54:57 by ralkhrai          #+#    #+#              #
-#    Updated: 2026/10/16 22:09:34 by ralkhrai         ###   ########.fr        #
+#    Updated: 2026/10/16 22:56:54 by ralkhrai         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,9 +23,9 @@ OBJS = $(SRCS:.c=.o)
 all : $(NAME)
 
 $(NAME) : $(OBJS)
-	ar rcs $(NAME) $(OBJ)
+	ar rcs $(NAME) $(OBJS)
 
-%.o : %.c libftprintf.h
+%.o : %.c ft_printf.h
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:

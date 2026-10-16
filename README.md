@@ -44,7 +44,7 @@ make re         # rebuild everything
 Use it in your own program:
 
 ```c
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int main(void)
 {

@@ -6,7 +6,7 @@
 /*   By: ralkhrai <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/16 21:00:05 by ralkhrai          #+#    #+#             */
-/*   Updated: 2026/10/16 22:31:42 by ralkhrai         ###   ########.fr       */
+/*   Updated: 2026/10/17 17:23:59 by ralkhrai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,8 @@ int	ft_printf(const char *str, ...)
 	int		count;
 	va_list	ap;
 
+	if (str == NULL)
+		return (-1);
 	va_start(ap, str);
 	count = 0;
 	i = 0;

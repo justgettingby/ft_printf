@@ -6,7 +6,7 @@
 /*   By: ralkhrai <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/16 23:25:11 by ralkhrai          #+#    #+#             */
-/*   Updated: 2026/10/16 23:25:14 by ralkhrai         ###   ########.fr       */
+/*   Updated: 2026/10/17 21:38:00 by ralkhrai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stddef.h>
 # include <stdint.h>
 # include <unistd.h>
+# include "libft/libft.h"
 
 int	ft_putn(unsigned long long num, int base, char *base_list);
 int	ft_putnbr_signed(int n);

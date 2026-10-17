@@ -33,6 +33,7 @@ Flags, width and precision are not supported.
 
 - `%p` with `NULL` prints `(nil)` (Linux/glibc behavior).
 - Arguments that do not match their specifier cause undefined behavior, as with the real `printf`.
+- `libft/` (sources and its own Makefile) is included and built by this project's Makefile, as the subject requires. `ft_printf` itself does not call any libft function. `libftprintf.a` also contains libft's objects, so libft functions can be linked through it alone.
 
 ## Algorithm and data structure
 
@@ -50,9 +51,9 @@ Flags, width and precision are not supported.
 ## Instructions
 
 ```
-make            # build libftprintf.a
-make clean      # remove object files
-make fclean     # remove object files and the library
+make            # build libft (via libft/Makefile), then libftprintf.a
+make clean      # remove object files (libft's too)
+make fclean     # remove object files and the libraries (libft's too)
 make re         # rebuild everything
 ```
 
@@ -75,8 +76,6 @@ cc -Wall -Wextra -Werror main.c libftprintf.a
 ## Resources
 
 - Linux manual pages: `man 3 printf`, `man 2 write`, `man 3 stdarg`.
-- https://man.archlinux.org/man/va_start.3.en
-- Geeks for Geeks
 
 ### Use of AI
 

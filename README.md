@@ -1,5 +1,7 @@
 *This project has been created as part of the 42 curriculum by ralkhrai.*
 
+IMPORTNAT NOTE: libft was not used, just added and built using its makefile and added in the ft_printf header in case more features were to be added and libft was needed.
+
 # ft_printf
 
 ## Description
